@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
 *{
     margin: 0px;
@@ -9,25 +9,38 @@
 
 body{
     background-color: #F4F2F3;
-    font-family: Arial, Helvetica, sans-serif;
+
 }
 
 header{
     background-color: #252525;
-    height: 50px;
     color: #F4F2F3;
-    box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.307);
+    height: 50px;
+    
 }
 
 header > p{
     text-align: end;
     padding-top: 14px;
     padding-right: 50px;
-    font-family:"Bodoni Moda";;
+    font-family: 'Manrope';
+    
 }
+
 
 #titulo{
     font-size: 1.7em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 100px;
+}
+
+
+#areasobre{
+    padding: 100px;
+    background-color: #252525;
+    color: #F4F2F3;
+    margin-top: 300px;
+    box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.307);
 }
 
 input{
