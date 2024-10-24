@@ -7,6 +7,34 @@
     src: url(../fontes/Harmond/Harmond-ExtBdItaExp.otf);
 }
 
+@font-face {
+    font-family: 'Wagon';
+    src: url(../fontes/Wagon/Wagon-Bold.otf);
+}
+
+.material-symbols-outlined {
+    animation: subirDescer 2s infinite;
+    margin-top: 50px;
+    color: var(--teal);
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+@keyframes subirDescer {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+
 :root {
     --navy: #2F4156;
     --skyblue: #C8D9E6;
@@ -23,17 +51,18 @@
 
 body {
     background-color: var(--beige);
-    font-family: 'Harmond Display';
+    font-family: 'Montserrat';
     font-weight: 500;
 }
 
 header {
-    background-color: var(--teal);
+    background-color: var(--beige);
     height: 65px;
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-end;
     align-items: center;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.118);
 }
 
 nav {
@@ -43,18 +72,16 @@ nav {
 
 header > nav > a {
     text-decoration: none;
-    color: var(--beige);
-    padding: 15px;
-    font-size: 1.5em;
-    text-shadow: 0px 0px 2px var(--navy);
+    color: var(--teal);
+    padding: 10px;
+    font-size: 1em;
 }
 
 header > nav > a:hover {
-    background-color: rgba(255, 255, 255, 0.037);
-    transition: font-size 0.5s;
+    text-decoration: underline;
 }
 
-section#principal {
+section#inicio {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -62,15 +89,17 @@ section#principal {
     height: 650px;
 }
 
-.titulos {
-    color: var(--navy);
+.titulo-inicio {
+    color: var(--teal);
     font-size: 5em;
     text-align: center;
+    font-family: 'Wagon';
 }
 
-.textos {
+.descricao {
     font-family: 'Montserrat';
-    font-size: 2em;
+    font-size: 1em;
+    color: var(--teal);
 }
 
 section#projetos {
