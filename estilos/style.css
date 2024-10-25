@@ -104,13 +104,14 @@ section#inicio {
 
 section#projetos {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     height: 728px;
     background-color: var(--navy);
     color: var(--white);
     justify-content: space-evenly;
     padding: 20px;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.118);
+    text-align: center;
 }
 
 h2#titulo-projetos {
@@ -138,7 +139,60 @@ div#container {
 }
 
 .item-projeto:hover {
-    height: 310px;
-    width: 210px;
+    height: 320px;
+    width: 220px;
     transition: height 1s, width 1s;
+}
+
+footer {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    /*height: 663px;*/
+}
+
+footer h2 {
+    color: var(--teal);
+    font-size: 5em;
+    text-align: center;
+    font-family: 'Wagon';
+}
+
+p#pergunta-rodape {
+    font-family: 'Montserrat';
+    font-size: 1em;
+    color: var(--teal);
+}
+
+div#container-contato {
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.item-contato {
+    padding: 30px;
+    color: var(--teal);
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.item-contato:hover {
+    text-decoration: underline;
+}
+
+div#espaco {
+    background-color: var(--beige);
+    color: var(--beige);
+    height: 50px;
+}
+
+
+p#local {
+    font-family: 'Montserrat';
+    font-size: 0.9em;
+    color: var(--teal);
 }
