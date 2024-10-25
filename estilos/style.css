@@ -63,6 +63,10 @@ header {
     justify-content: flex-end;
     align-items: center;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.118);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    padding: 0;
 }
 
 nav {
@@ -86,7 +90,7 @@ section#inicio {
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    height: 663px;
+    height: 728px;
 }
 
 .titulo-inicio {
@@ -149,7 +153,7 @@ footer {
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    height: 600px;
+    height: 729px;
     /*height: 663px;*/
 }
 
@@ -173,6 +177,10 @@ div#container-contato {
     margin-bottom: 50px;
 }
 
+#pergunta-rodape {
+    text-align: center;
+}
+
 .item-contato {
     padding: 30px;
     color: var(--teal);
@@ -192,6 +200,7 @@ div#espaco {
 
 
 p#local {
+    text-align: center;
     font-family: 'Montserrat';
     font-size: 0.9em;
     color: var(--teal);
