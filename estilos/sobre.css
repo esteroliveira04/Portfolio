@@ -63,11 +63,88 @@ header > nav > a:hover {
 }
 
 section#sobre {
-background-color: #567c8d;
-height: 664px;
+background-color: var(--beige);
+height: 728px;
 display: flex;
+flex-flow: row nowrap;
+justify-content: space-evenly;
+align-items: center;
+padding: 20px;
 }
 
-section#tecnologias {
+div#textos-sobre {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 50%;
+    font-family: 'Montserrat';
+    font-size: 1em;
+    color: var(--teal);
+    line-height: 1.5em;
+}
 
+.titulos {
+    font-family: 'Wagon';
+    font-size: 5em;
+    margin-bottom: 30px;
+}
+
+ img#avatar {
+    height: 400px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.118);
+ }
+
+section#tecnologias {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--navy);
+    height: 778px;
+    padding: 10px;
+    color: var(--beige);
+}
+
+div.container-tec {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h2#titulo-tec {
+    text-align: center;
+    color: var(--beige);
+    text-decoration: underline;
+    margin-top: 100px;
+}
+
+.item-tec {
+    background-color: var(--navy);
+    transition: height 1s, width 1s;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    margin: 50px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.118);
+}
+
+.item-tec:hover {
+    height: 220px;
+    width: 220px;
+    transition: height 1s, width 1s;
+}
+
+section#tecnologias img {
+    height: 150px;
+    margin: 30px;
+} 
+
+div.container-tec p {
+    font-family: 'Montserrat';
+    font-size: 1em;
+    color: var(--teal);
+    margin-top: 15px;
 }

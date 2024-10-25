@@ -7,16 +7,31 @@
     <link rel="stylesheet" href="estilos/sobre.css">
 </head>
 <body>
-    <header>
+    <header id="header">
         <nav><a href="index.html">Voltar</a></nav>
     </header>
     <main>
         <section id="sobre">
-            <h1>Sobre mim:</h1>
+            <div id="textos-sobre">
+                <h2 class="titulos">Sobre mim:</h2>
+                <p>Olá, me chamo Ester de Oliveira da Silva, tenho 20 anos de idade e sou estudante de Análise e Desenvolvimento de Sistemas.</p>
+                <p>Sou apaixonada pelo desenvolvimento front-end e estou ansiosa para transformar essa paixão em uma carreira profissional. Atualmente, trabalho com HTML, CSS e JavaScript, além de utilizar Git e GitHub para versionamento, sempre buscando aprimorar minhas habilidades e aprender novas tecnologias para me tornar uma desenvolvedora cada vez mais completa.</p>
+            </div>
+            <img id="avatar" src="imagens/avatarfundobranco.jpeg" alt="Avatar ilustrativo">
         </section>
         <section id="tecnologias">
-            <h2>Tecnologias:</h2>
+            <h2 id="titulo-tec">Tecnologias:</h2>
+            <div class="container-tec">
+                <div class="item-tec"><img src="imagens/html (1).png" alt="Icone-HTML"><p>HTML</p></div>
+                <div class="item-tec"><img src="imagens/css.png" alt="Icone-CSS"><p>CSS</p></div>
+                <div class="item-tec"><img src="imagens/javascript.png" alt="Icone-JavaScript"><p>JavaScript</p></div>
+            </div>
+            <div class="container-tec">
+                <div class="item-tec"><img src="imagens/icongit.png" alt="Icone-Git"><p>Git</p></div>
+                <div class="item-tec"><img src="imagens/github.png" alt="Icone-GitHub"><p>GitHub</p></div>
+            </div>
         </section>
     </main>
+    <script src="scriptsobre.js"></script>
 </body>
 </html>
