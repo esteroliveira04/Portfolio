@@ -1,0 +1,198 @@
+@charset "UTF-8";
+
+/* VERSÃO MOBILE */
+@media screen and (max-width: 900px) { 
+
+    section#sobre {
+        background-color: var(--beige);
+        height: 728px;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 20px;
+        }
+        
+        div#textos-sobre {
+            display: flex;
+            flex-flow: column nowrap;
+            width: 90%;
+            font-family: 'Montserrat';
+            font-size: 1em;
+            color: var(--teal);
+            line-height: 1.5em;
+            text-align: justify;
+        }
+        
+        .titulos {
+            font-family: 'Wagon';
+            font-size: 3.9em;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+         img#avatar {
+            height: 250px;
+            border-radius: 30px;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.118);
+            transition: height 1s, width 1s;
+         }
+        
+        section#tecnologias {
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            justify-content: space-evenly;
+            background-color: var(--navy);
+            height: 778px;
+            padding: 10px;
+            color: var(--beige);
+        }
+        
+        div.container-tec {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        
+        h2#titulo-tec {
+            text-align: center;
+            color: var(--beige);
+            text-decoration: underline;
+            margin-top: 100px;
+        }
+        
+        .item-tec {
+            background-color: var(--navy);
+            transition: height 1s, width 1s;
+            height: 100px;
+            width: 100px;
+            text-align: center;
+            margin: 50px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.118);
+        }
+        
+        .item-tec:hover {
+            height: 120px;
+            width: 120px;
+            transition: height 1s, width 1s;
+        }
+        
+        section#tecnologias img {
+            height: 50px;
+            margin: 30px;
+        } 
+        
+        div.container-tec p {
+            font-family: 'Montserrat';
+            font-size: 1em;
+            color: var(--teal);
+            margin-top: 15px;
+        }
+    
+}
+
+/* VERSÃO PARA TABLET */
+@media screen and (min-width: 900px) and (max-width: 1080px) {
+
+    section#sobre {
+        background-color: var(--beige);
+        height: 728px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 20px;
+        }
+        
+        div#textos-sobre {
+            display: flex;
+            flex-flow: column nowrap;
+            width: 50%;
+            font-family: 'Montserrat';
+            font-size: 1em;
+            color: var(--teal);
+            line-height: 1.5em;
+            text-align: justify;
+        }
+        
+        .titulos {
+            font-family: 'Wagon';
+            font-size: 4em;
+            margin-bottom: 30px;
+        }
+        
+         img#avatar {
+            height: 350px;
+            border-radius: 30px;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.118);
+            transition: height 1s, width 1s;
+         }
+
+         section#tecnologias {
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            justify-content: space-evenly;
+            background-color: var(--navy);
+            height: 778px;
+            padding: 10px;
+            color: var(--beige);
+        }
+        
+        div.container-tec {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        
+        h2#titulo-tec {
+            text-align: center;
+            color: var(--beige);
+            text-decoration: underline;
+            margin-top: 100px;
+        }
+        
+        .item-tec {
+            background-color: var(--navy);
+            transition: height 1s, width 1s;
+            height: 180px;
+            width: 180px;
+            text-align: center;
+            margin: 50px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.118);
+        }
+        
+        .item-tec:hover {
+            height: 200px;
+            width: 200px;
+            transition: height 1s, width 1s;
+        }
+        
+        section#tecnologias img {
+            height: 130px;
+            margin: 30px;
+        } 
+        
+        div.container-tec p {
+            font-family: 'Montserrat';
+            font-size: 1em;
+            color: var(--teal);
+            margin-top: 15px;
+        }
+
+}
+
+:root {
+    --navy: #2F4156;
+    --skyblue: #C8D9E6;
+    --teal: #567c8d;
+    --beige: #f5efeb;
+    --white: #FFFFFF;
+}
