@@ -26,7 +26,7 @@
         
         .titulos {
             font-family: 'Wagon';
-            font-size: 3.9em;
+            font-size: 3.7em;
             margin-bottom: 30px;
             text-align: center;
         }
@@ -67,8 +67,8 @@
         .item-tec {
             background-color: var(--navy);
             transition: height 1s, width 1s;
-            height: 100px;
-            width: 100px;
+            height: 80px;
+            width: 80px;
             text-align: center;
             margin: 50px;
             border-radius: 5px;
@@ -76,13 +76,13 @@
         }
         
         .item-tec:hover {
-            height: 120px;
-            width: 120px;
+            height: 100px;
+            width: 100px;
             transition: height 1s, width 1s;
         }
         
         section#tecnologias img {
-            height: 50px;
+            height: 30px;
             margin: 30px;
         } 
         
