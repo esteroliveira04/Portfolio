@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+/*VERSÃO DESKTOP FIRST*/
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 @font-face {
@@ -80,6 +82,7 @@ div#textos-sobre {
     font-size: 1em;
     color: var(--teal);
     line-height: 1.5em;
+    text-align: justify;
 }
 
 .titulos {
