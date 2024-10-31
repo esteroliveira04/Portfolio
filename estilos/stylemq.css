@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+/* VERSÃO MOBILE */
+@media screen and (max-width: 768px) {
+    
+    section#projetos {
+        display: flex;
+        flex-flow: row wrap;
+        height: 728px;
+        background-color: var(--navy);
+        color: var(--white);
+        justify-content: space-evenly;
+        padding: 20px;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.118);
+        text-align: center;
+    }
+    
+    h2#titulo-projetos {
+        text-align: center;
+        color: var(--beige);
+        text-decoration: underline;
+    }
+    
+    div#container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .item-projeto {
+        background-color: var(--navy);
+        transition: height 1s, width 1s;
+        height: 100px;
+        width: 90%;
+        text-align: center;
+        margin: 30px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.118);
+    }
+    
+    .item-projeto:hover {
+        height: 120px;
+        width: 95%;
+        transition: height 1s, width 1s;
+    }
+
+    div#container-contato {
+        display: flex;
+        flex-flow: row wrap;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        justify-content: center;
+    }
+    
+}
+
+/* VERSÃO PARA TABLET */
+@media screen and (min-width: 760px) and (max-width: 1300px) {
+    
+    section#projetos {
+        display: flex;
+        flex-flow: column nowrap;
+        height: 728px;
+        background-color: var(--navy);
+        color: var(--white);
+        justify-content: space-evenly;
+        padding: 20px;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.118);
+        text-align: center;
+    }
+    
+    h2#titulo-projetos {
+        text-align: center;
+        color: var(--beige);
+        text-decoration: underline;
+    }
+    
+    div#container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .item-projeto {
+        background-color: var(--navy);
+        transition: height 1s, width 1s;
+        height: 220px;
+        width: 200px;
+        text-align: center;
+        margin: 50px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.118);
+    }
+    
+    .item-projeto:hover {
+        height: 240px;
+        width: 220px;
+        transition: height 1s, width 1s;
+    }
+
+}
+
+:root {
+    --navy: #2F4156;
+    --skyblue: #C8D9E6;
+    --teal: #567c8d;
+    --beige: #f5efeb;
+    --white: #FFFFFF;
+}
