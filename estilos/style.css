@@ -150,7 +150,7 @@ div#container {
 }
 
 #projeto1{
-    background: url(/imagens/printprojetologin.jpg);
+    background-image: url(/imagens/printprojetologin.jpg);
     background-size: cover;
     background-position: center center;
     
