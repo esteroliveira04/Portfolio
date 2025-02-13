@@ -36,6 +36,7 @@
         text-align: center;
         margin: 30px;
         border-radius: 5px;
+        margin-bottom: 10px;
         box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.118);
     }
     
@@ -55,8 +56,9 @@
     
 }
 
-/* VERSÃO PARA TABLET */
-@media screen and (min-width: 760px) and (max-width: 1300px) {
+/* VERSÃO TELAS MEIO TERMO*/
+
+@media screen and (min-width: 768px) and (max-width: 980px) {
     
     section#projetos {
         display: flex;
@@ -77,10 +79,71 @@
     }
     
     div#container {
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        /*display: flex;
         flex-flow: row wrap;
         justify-content: center;
-        align-items: center;
+        align-items: center;*/
+    }
+    
+    .item-projeto {
+        background-color: var(--navy);
+        transition: height 1s, width 1s;
+        height: 220px;
+        width: 160px;
+        text-align: center;
+        margin: 1px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.118);
+    }
+    
+    .item-projeto:hover {
+        height: 240px;
+        width: 220px;
+        transition: height 1s, width 1s;
+    }
+
+}
+
+:root {
+    --navy: #2F4156;
+    --skyblue: #C8D9E6;
+    --teal: #567c8d;
+    --beige: #f5efeb;
+    --white: #FFFFFF;
+}
+
+/* VERSÃO PARA TABLET */
+@media screen and (min-width: 980px) and (max-width: 1300px) {
+    
+    section#projetos {
+        display: flex;
+        flex-flow: column nowrap;
+        height: 728px;
+        background-color: var(--navy);
+        color: var(--white);
+        justify-content: space-evenly;
+        padding: 20px;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.118);
+        text-align: center;
+    }
+    
+    h2#titulo-projetos {
+        text-align: center;
+        color: var(--beige);
+        text-decoration: underline;
+    }
+    
+    div#container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        /*display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;*/
     }
     
     .item-projeto {
@@ -89,7 +152,7 @@
         height: 220px;
         width: 200px;
         text-align: center;
-        margin: 50px;
+        margin: 5px;
         border-radius: 5px;
         box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.118);
     }

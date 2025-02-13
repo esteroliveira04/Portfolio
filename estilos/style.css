@@ -125,10 +125,13 @@ h2#titulo-projetos {
 }
 
 div#container {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    /*display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    align-items: center;
+    align-items: center;*/
 }
 
 .item-projeto {
@@ -149,15 +152,26 @@ div#container {
     transition: height 1s, width 1s;
 }
 
+.item-projeto p {
+    background-color: var(--navy);
+    padding: 5px;
+}
+
 #projeto1{
     background-image: url(../imagens/printprojetologin.jpg);
     background-size: cover;
     background-position: center center;
-    
 }
 
-#projetoum{
+#projeto2{
+    background-image: url(../imagens/projetocalculadora.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.projetosLink{
     color: #f5efeb;
+    width: 100%;
 }
 
 footer {
